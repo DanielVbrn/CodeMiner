@@ -1,0 +1,137 @@
+header .navbar{
+    padding: 10px;
+    font-size: 20px;
+    background-color: gray;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+header p {
+    font-size: 25px;
+    margin: 10px;
+}
+
+
+body li {
+    list-style: none;
+}
+
+.navbar {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: aliceblue;
+    border-radius: 0.5rem;
+    background-color:chartreuse;
+    padding: 10px 20px;
+    border: 1px solid black;
+    text-decoration: none;   
+    cursor: pointer;
+}
+
+
+
+.login-style {
+    border: solid cadetblue;
+    margin:0 auto;
+    width: 300px;
+    
+    background-color: aqua;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.login-style input{
+    min-width: 60%;
+    width:  60%;
+    margin: 10px;
+    height: 25px;
+    
+}
+
+
+@media (max-width:600px) {
+    
+}
+
+footer ul { 
+    align-items: center;
+    display: flex;
+}
+
+footer ul li {
+    text-decoration: black;
+    padding: 10px;
+}
+
+footer ul li a{
+    color: white;
+    background-color: gray;
+    border-radius: 10px;
+    border: 10px solid gray;
+   
+}
+
+a {
+    text-decoration: none;   
+}
+
+header #navbar-blog{
+    background-color: cadetblue;
+    border-radius: 5px;
+}
+
+header #navbar-blog {
+    background-color: cadetblue;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#navbar-blog {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#navbar-blog ul li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    display: flex;
+    border: none;
+
+}
+
+
+#navbar-blog ul li a{
+    color: aliceblue;
+    padding: 10px;
+    display: flex;
+    background-color: chartreuse;
+    border-radius: 10px;
+}
+#text-blog {
+    display: flex;
+    margin: 20px
+}
+
+#text-blog p{
+    border-radius: 10px;
+    margin: 20px;
+    background-color: aqua;
+    padding: 10px;
+} 
+
+footer .back-top a {
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid;
+    background-color: chartreuse;
+}
