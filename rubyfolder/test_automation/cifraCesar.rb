@@ -2,7 +2,7 @@ require "rspec"
 
 class Caesar
 
-  def caesar_cipher(text, shift)
+  def self.caesar_cipher(text, shift)
     shifted_text = ""
 
     text.each_char do |char|
@@ -17,11 +17,11 @@ class Caesar
     shifted_text
   end
 
-  def letter?(char)
+  def self.letter?(char)
     char.match?(/[a-z]/i)
   end
 
-  def shift_letter(char, shift)
+  def self.shift_letter(char, shift)
     ascii_offset = char.match?(/[A-Z]/) ? 65 : 97
     shifted_code = ((char.ord - ascii_offset + shift) % 26) + ascii_offset
     shifted_code.chr
@@ -31,7 +31,7 @@ end
 
 
 RSpec.describe "Caesar" do
-  subject { caesar_cipher(text, shift)}
+  subject { Caesar.caesar_cipher(text, shift)}
   describe ".caesar_cipher" do
     context "when text is Hello and shift is 5" do
       let(:text) {"Hello"}
@@ -46,8 +46,8 @@ end
 # frozen_string_literal: true
 
 
-plaintext = Caesar.new
-plaintext = "Hello World!"
-shift = 5
-ciphertext = caesar_cipher(plaintext, shift)
-puts ciphertext
+# plaintext = Caesar.new
+# plaintext = "Hello World!"
+# shift = 5
+# ciphertext = caesar_cipher(plaintext, shift)
+# puts ciphertext
